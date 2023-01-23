@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .converter {
+    padding: 30px 20px;
+    width: fit-content;
+    height: fit-content;
+    background: #414a4c;
+}
+
+.container .converter h2 {
+    text-align: center;
+    color: rgb(221, 221, 221);
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container .converter .display {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container .converter .display input {
+    width: 200px;
+    height: 50px;
+    padding: 0px 10px;
+    text-align: center;
+    border: 3pxx solid #49798a;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.container .converter .display .equal {
+    font-size: 25px;
+}
+
+.container .converter .display .box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.container .converter .display .box label {
+    font-size: 20px;
+    color: rgb(176, 176, 176);
+    font-weight: bold;
+    padding: 2px;
+}
+
+
+/* responsive */
+
+@media  only screen and (max-width:756px) {
+
+    .container .converter .display {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 10px 10px;
+    }
+
+    .container .converter .display .equal {
+        font-size: 25px;
+    }
+
+}
